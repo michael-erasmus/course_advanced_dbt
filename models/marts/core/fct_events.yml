@@ -1,0 +1,26 @@
+models:
+  - name: fct_events
+    description: This table contains a series of user-related events that occurred in our Bingeflix platform.
+    columns:
+      - name: event_id
+        description: The unique ID for each event. This acts as a primary key for this model.
+        tests:
+          - not_null
+          - unique    
+      - name: session_id
+        description: The id of the session the event was triggered in.
+        tests:
+          - not_null
+          - unique
+      - name: created_at
+        description: Timestamp for when the event was created.
+        tests:
+          - not_null
+      - name: user_id
+        description: The id of the user that triggered the event.
+        tests:
+          - not_null
+      - name: event_name
+        description: The name of the event (e.g., User Logged In, User Logged Out).
+        tests:
+          - not_null
