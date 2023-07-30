@@ -29,3 +29,38 @@ When the event was logged.
 The name of the event.
 {% enddocs %}
 
+## Subscription Plans
+
+This section contains documentation from the Bingeflix Subscription Plans table.
+
+{% docs bingeflix_subscription_plan_id %}
+The unique identifier of the subscription plan.
+{% enddocs %}
+
+{% docs bingeflix_plan_name %}
+The name of the subscription plan.
+{% enddocs %}
+
+{% docs bingeflix_pricing %}
+The price of the subscription.
+{% enddocs %}
+
+{% docs bingeflix_payment_period %}
+The recurring payment period for the subscription.
+{% enddocs %}
+
+## Subscriptions
+
+This section contains documentation from the Bingeflix Subscriptions table.
+
+{% docs bingeflix_subscription_starts_at %}
+When the subscription started.
+{% enddocs %}
+
+{% docs bingeflix_subscription_ends_at %}
+When the subscription ends. This value is NULL if the subscription is active.
+{% enddocs %}
+
+{% docs bingeflix_subscription_id %}
+The unique identifier for the subscription.
+{% enddocs %}
