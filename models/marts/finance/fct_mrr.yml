@@ -32,6 +32,12 @@ models:
       - name: mrr_change
         description: The change in monthly recurring revenue from the associated subscription versus last month.
 
+      - name: rolling_12_month_avg_subscription_mrr_amount
+        description: The average monthly recurring revenue generated from the subscription over the last 12 months.
+
+      - name: rolling_12_month_avg_user_mrr_amount
+        description: The average monthly recurring revenue generated from the user over the last 12 months.
+
       - name: retained_mrr_amount
         description: The amount of monthly recurring revenue associated with the subscription retained from the previous month.
 
