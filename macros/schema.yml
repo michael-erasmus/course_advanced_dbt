@@ -28,3 +28,11 @@ macros:
       - name: n_periods
         type: integer
         description: The number of periods to aggregate over. Defaults to 7.
+  - name: month
+    description: A macro that returns the month of a timestamp or date
+    arguments:
+      - name: ts
+        type: timestamp
+        description: The timestamp to extract the month from
+  - name: current_month
+    description: A macro that returns the current month
