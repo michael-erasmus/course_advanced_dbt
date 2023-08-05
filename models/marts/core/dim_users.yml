@@ -71,3 +71,9 @@ models:
         description: The age of the user when they became a Bingeflix user.
         tests:
           - not_null
+
+      - name: first_subscription_starts_at
+        description: The timestamp of the user's first subscription.
+
+      - name: count_of_subscriptions
+        description: The number of subscriptions the user's had.
