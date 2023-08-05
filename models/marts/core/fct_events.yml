@@ -6,7 +6,7 @@ models:
         description: '{{ doc("bingeflix_event_id") }}'
         tests:
           - not_null
-          - unique    
+          - unique
       - name: session_id
         description: '{{ doc("bingeflix_session_id") }}'
         tests:
