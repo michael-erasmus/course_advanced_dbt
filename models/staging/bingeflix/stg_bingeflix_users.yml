@@ -8,7 +8,7 @@ models:
           - not_null
           - unique
 
-      - name: user_created_at
+      - name: created_at
         description: '{{ doc("bingeflix_user_created_at") }}'
         tests:
           - not_null
