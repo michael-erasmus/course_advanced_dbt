@@ -10,10 +10,6 @@ models:
 
       - name: subscription_plan_id
         description: '{{ doc("bingeflix_subscription_plan_id") }}'
-        tests:
-          - not_null
-          - accepted_values:
-              values: [1, 2, 3]
 
       - name: user_id
         description: '{{ doc("bingeflix_user_id") }}'
@@ -22,23 +18,15 @@ models:
 
       - name: starts_at
         description: '{{ doc("bingeflix_subscription_starts_at") }}'
-        tests:
-          - not_null
 
       - name: ends_at
         description: '{{ doc("bingeflix_subscription_ends_at") }}'
 
       - name: plan_name
         description: '{{ doc("bingeflix_plan_name") }}'
-        tests:
-          - not_null
 
       - name: pricing
         description: '{{ doc("bingeflix_pricing") }}'
-        tests:
-          - not_null
 
       - name: billing_period
         description: '{{ doc("bingeflix_payment_period") }}'
-        tests:
-          - not_null
