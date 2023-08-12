@@ -36,3 +36,11 @@ macros:
         description: The timestamp to extract the month from
   - name: current_month
     description: A macro that returns the current month
+  - name: unit_testing_select_table
+    description: A macro that returns either the name of the source table to use for unit testing if unit testing is configured (the `unit_testing` var is set) or the name of the actual source table.
+    arguments:
+      - name: source_table
+        type: string
+        description: The name of the source table.
+      - name: test_table
+        description: The name of the table to use for unit testing.
