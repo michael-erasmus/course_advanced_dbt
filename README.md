@@ -114,6 +114,7 @@ Awesome! You are now ready to start the course! 🚀🚀🚀
 
 #### Models
 - The primary key column must have not_null and unique schema tests.
+- Only add tests for derived columns, no need to duplicate tests for fields already tested in the source.
 - All boolean columns must have an accepted_values schema test. The accepted values are true and false.
 - Columns that contain category values must have an accepted_values schema test.
 - Columns that should never be null must have a not_null schema test.
