@@ -37,3 +37,4 @@ repos:
   - id: check-model-tags
     args: ["--tags", "hourly", "daily", "weekly", "monthly", "--"]
     files: ^models/marts/core
+  - id: dbt-test
